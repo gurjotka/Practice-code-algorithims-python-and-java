@@ -15,7 +15,7 @@ class TreeNode {
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
-        Stack<Integer> stack = new Stack<>();
+        Stack<TreeNode> stack = new Stack<>();
         TreeNode node = root;
 
         while (true) {
@@ -72,18 +72,18 @@ public class Main {
 
         Integer[] values1 = {1, null, 2, 3};
         TreeNode root1 = buildTree(values1);
-        solution.inorderTraversal(root1);
+        System.out.println(solution.inorderTraversal(root1));
 
         Integer[] values2 = {1, 2, 3, 4, 5, null, 8, null, null, 6, 7, 9};
         TreeNode root2 = buildTree(values2);
-        solution.inorderTraversal(root2);
+        System.out.println(solution.inorderTraversal(root2));
 
         Integer[] values3 = {};
         TreeNode root3 = buildTree(values3);
-        solution.inorderTraversal(root3);
+        System.out.println(solution.inorderTraversal(root3));
 
         Integer[] values4 = {1};
         TreeNode root4 = buildTree(values4);
-        solution.inorderTraversal(root4);
+        System.out.println(solution.inorderTraversal(root4));
     }
 }
